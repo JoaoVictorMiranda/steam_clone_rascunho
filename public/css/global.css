@@ -1,0 +1,31 @@
+:root {
+  --cor-primaria: #1B2838;   
+  --cor-secundaria: #171D25; 
+  --cor-terciaria: #3D4D5E;  
+  --cor-acento: #5A8D1C;     
+  --cor-aviso: #BF5A5A;     
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: var(--cor-secundaria);
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    gap: 2rem;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+}
+.logo h2{
+    color: rgb(168, 168, 168);
+}
