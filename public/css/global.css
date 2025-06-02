@@ -5,6 +5,7 @@
   --cor-acento: #5a8d1c;
   --cor-aviso: #bf5a5a;
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -12,6 +13,7 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serifs;
   transition: 0.01s;
 }
+
 a:hover {
   color: rgb(229, 229, 229);
   font-size: 1.2rem;
@@ -40,6 +42,7 @@ header {
   height: 120px;
   padding: 1rem 5rem;
 }
+
 header ul {
   display: flex;
   gap: 2rem;
@@ -53,4 +56,18 @@ header ul {
 
 .logo img {
   width: 150px;
+}
+
+
+
+footer {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  background: var(--cor-terciaria);
+  color: white;
 }

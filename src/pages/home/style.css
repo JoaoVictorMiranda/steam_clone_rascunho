@@ -1,0 +1,20 @@
+:root {
+        --cor-primaria: #1b2838;
+        --cor-secundaria: #3d4d5e;
+        --cor-terciaria: #171d25;
+        --cor-acento: #5a8d1c;
+        --cor-aviso: #bf5a5a;
+      }
+
+
+.card_grande img{
+        width: 500px;
+        margin: .3rem;
+}
+.card_grande{
+        display: flex;
+        align-items: end;
+
+        color: white;
+        border: 1px solid red;
+}
