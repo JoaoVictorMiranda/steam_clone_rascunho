@@ -4,17 +4,114 @@
         --cor-terciaria: #171d25;
         --cor-acento: #5a8d1c;
         --cor-aviso: #bf5a5a;
-      }
-
-
-.card_grande img{
-        width: 500px;
-        margin: .3rem;
 }
-.card_grande{
+
+/* Corpo e HTML protegidos contra scroll lateral */
+html,
+body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        background-color: var(--cor-primaria);
+        color: white;
+        font-family: sans-serif;
+}
+
+/* Cartão grande */
+.card_grande {
         display: flex;
         align-items: end;
-
+        gap: 1rem;
+        font-size: 20pt;
         color: white;
-        border: 1px solid red;
+        line-height: 1.4;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: left;
+        flex-wrap: wrap;
+}
+
+.card_grande img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        margin: 0.3rem 0;
+        border-radius: 4px;
+        object-fit: cover;
+}
+
+/* Container reverso */
+.container_dois {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin-top: 2rem;
+        color: white;
+        gap: 1rem;
+        flex-wrap: wrap;
+}
+
+/* Cartões laterais */
+.card_direito,
+.card_esquerdo {
+        display: flex;
+        padding: 10px;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+}
+
+.card_direito img,
+.card_esquerdo img {
+        height: 120px;
+        max-width: 250px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 4px;
+}
+
+/* Links */
+a {
+        color: var(--cor-acento);
+        text-decoration: none;
+}
+
+a:hover {
+        text-decoration: underline;
+        filter: brightness(1.2);
+}
+
+/* Responsividade refinada */
+@media screen and (max-width: 800px) {
+        .container_dois {
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .card_direito,
+        .card_esquerdo {
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .card_direito img,
+        .card_esquerdo img {
+                max-width: 90vw;
+                height: auto;
+        }
+
+        .card_grande {
+                flex-direction: column;
+                align-items: center;
+                font-size: 15pt;
+                text-align: center;
+        }
+
+        .card_grande img {
+                width: 100%;
+                max-width: 90vw;
+                height: auto;
+        }
 }

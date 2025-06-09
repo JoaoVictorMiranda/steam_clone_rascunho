@@ -16,7 +16,6 @@ a {
 
 a:hover {
   color: rgb(229, 229, 229);
-  font-size: 1.2rem;
 }
 
 body {
@@ -58,6 +57,18 @@ header ul {
   width: 150px;
 }
 
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+nav input {
+  padding: .4rem;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
 
 
 footer {
@@ -70,4 +81,36 @@ footer {
   text-align: center;
   background: var(--cor-terciaria);
   color: white;
+}
+
+/*
+FAZER O MENU HAMBURGUER
+*/
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  #navegacao {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .menu:hover {
+    background-color: var(--cor-primaria);
+  }
+
+  header {
+    flex-direction: column;
+  }
+
 }

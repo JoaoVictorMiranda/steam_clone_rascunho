@@ -16,25 +16,53 @@
     <div class="logo">
       <img src="/public/assets/images/logo_steam.svg" height="150px">
     </div>
-    <nav>
+    <div class="menu" id="menu">
+      <img src="/public/assets/images/menu.svg" onclick="burguer()">
+    </div>
+    <nav id="navegacao">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Categorias</a></li>
         <li><a href="#">Biblioteca</a></li>
       </ul>
+      <input type="text" placeholder="Pesquise seu jogo">
     </nav>
   </header>
   <main>
     <div class="container">
-      <div class="container_esquerda">
+      <div class="container_Grande">
         <div class="card_grande">
-          <img src="/public/assets/images/baldursgate.webp" >
+          <img src="/public/assets/images/baldursgate.webp">
           <p>R$95,99</p>
         </div>
       </div>
-      <div class="container_direita">
-
+      <div class="container_dois">
+        <div class="card_direito">
+          <img src="/public/assets/images/Hades.jpg">
+          <p>R$95,99</p>
+        </div>
+        <div class="card_esquerdo"> <img src="/public/assets/images/hollow_knite.jpg">
+          <p>R$95,99</p>
+        </div>
       </div>
+      <div class="container_Grande">
+        <div class="card_grande">
+          <img src="/public/assets/images/cyberpunk2077.jpg">
+          <p>R$95,99</p>
+        </div>
+      </div>
+      <div class="container_dois">
+        <div class="card_direito">
+          <img src="/public/assets/images/deathmustdie.jpg" />
+          <p>R$95,99</p>
+        </div>
+        <div class="card_esquerdo"> <img src="/public/assets/images/eurotrucksimulator2.jpeg">
+          <p>R$95,99</p>
+        </div>
+      </div>
+
+    </div>
+
     </div>
   </main>
   <footer>
@@ -43,5 +71,15 @@
       &copy;copyright
     </p>
   </footer>
+  <script>
+    function burguer() {
+      if (navegacao.style.display == 'flex') {
+        navegacao.style.display = 'none'
+      } else {
+        navegacao.style.display = 'flex'
+      }
+    }
+  </script>
 </body>
+
 </html>
