@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/public/css/global.css">
+  <link rel="stylesheet" href="/public/css/fonts.css">
+  <title>Steam</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="/public/assets/images/logo_steam.svg" height="150px">
+    </div>
+    <div class="menu" id="menu">
+      <img src="/public/assets/images/menu.svg" onclick="burguer()">
+    </div>
+    <nav id="navegacao">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categorias</a></li>
+        <li><a href="#">Biblioteca</a></li>
+      </ul>
+      <input type="text" placeholder="Pesquise seu jogo">
+    </nav>
+  </header>
+  <main>
+    <div>
+      <div class="Principais">
+        <h2>Principais categorias de Jogos</h2>
+        <ul>
+          <li>Ação</li>
+          <li>Aventura</li>
+          <li>RPG (Role-Playing Game)</li>
+          <li>Estratégia</li>
+          <li>Simulação</li>
+          <li>Esportes</li>
+          <li>Corrida</li>
+          <li>Tiro em primeira pessoa (FPS)</li>
+          <li>Plataforma</li>
+          <li>Luta</li>
+          <li>Sandbox / Mundo Aberto</li>
+          <li>Sobrevivência</li>
+          <li>Battle Royale</li>
+          <li>Quebra-cabeça (Puzzle)</li>
+          <li>Stealth (Furtividade)</li>
+          <li>Multiplayer Online (MMO)</li>
+          <li>Jogos de Cartas / TCG</li>
+          <li>Horror / Terror</li>
+          <li>Musical / Ritmo</li>
+          <li>Visual Novel</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Categorias por Modo de Jogo</h2>
+        <ul>
+          <li>Single Player (Um jogador)</li>
+          <li>Multiplayer Local (Cooperativo ou Competitivo na mesma máquina)</li>
+          <li>Multiplayer Online</li>
+          <li>Cooperativo Online (Co-op)</li>
+          <li>Competitivo Online (PvP)</li>
+          <li>Jogos por Turno (Turn-Based)</li>
+          <li>Jogos em Tempo Real (Real-Time)</li>
+          <li>Jogos em Tela Dividida (Split-Screen)</li>
+          <li>Jogos Assíncronos (ex: jogos por turnos em momentos diferentes, como em mobile ou via e-mail)</li>
+        </ul>
+
+      </div>
+    </div>
+    <div></div>
+    <div></div>
+  </main>
+  <footer>
+    <p>
+      Made by João Victor <br>
+      &copy;copyright
+    </p>
+  </footer>
+  <script>
+    function burguer() {
+      if (navegacao.style.display == 'flex') {
+        navegacao.style.display = 'none'
+      } else {
+        navegacao.style.display = 'flex'
+      }
+    }
+  </script>
+</body>
+
 </html>

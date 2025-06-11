@@ -109,8 +109,5 @@ FAZER O MENU HAMBURGUER
     background-color: var(--cor-primaria);
   }
 
-  header {
-    flex-direction: column;
-  }
 
 }
